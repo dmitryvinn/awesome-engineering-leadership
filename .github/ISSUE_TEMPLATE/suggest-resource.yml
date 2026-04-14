@@ -1,0 +1,83 @@
+name: Suggest a Resource
+description: Suggest a book, article, podcast, video, course, tool, or community for the list
+title: "[Resource] "
+labels: ["resource-suggestion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a resource! Please fill out the details below so we can review and add it to the list.
+
+  - type: input
+    id: title
+    attributes:
+      label: Resource Title
+      description: The name of the book, article, podcast, video, course, tool, or community
+      placeholder: "e.g., The Manager's Path"
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      description: A direct link to the resource
+      placeholder: "https://..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Resource Type
+      options:
+        - Book
+        - Article
+        - Podcast
+        - Video
+        - Course
+        - Tool
+        - Community
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Which topic area does this resource best fit?
+      options:
+        - The Leadership Path (first-time EM, staff+, director/VP, CTO)
+        - People and Culture (hiring, 1:1s, feedback, DEI, retention)
+        - Engineering Operations (incident mgmt, on-call, DevOps, SRE)
+        - Strategy and Architecture (system design, tech debt, platform)
+        - Business and Communication (stakeholder mgmt, board comms)
+        - Delivery and Communication (user stories, agile, estimation)
+    validations:
+      required: true
+
+  - type: input
+    id: author
+    attributes:
+      label: Author / Creator
+      description: Who created this resource?
+      placeholder: "e.g., Camille Fournier"
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A brief description of the resource and why it's valuable for engineering leaders
+      placeholder: "A practical guide for tech leaders navigating growth and change..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: Any other information about why this resource should be included
+    validations:
+      required: false
