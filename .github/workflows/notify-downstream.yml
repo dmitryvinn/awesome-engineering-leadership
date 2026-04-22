@@ -1,0 +1,25 @@
+name: Notify Downstream (engleader.dev )
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'README.md'
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Trigger engleader.dev rebuild
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.DOWNSTREAM_PAT }}
+          repository: dmitryvinn/engleader.dev
+          event-type: upstream-content-changed
+          client-payload: '{"source": "awesome-engineering-leadership", "trigger": "readme-push"}'
+
+      - name: Summary
+        run: |
+          echo "## 📡 Downstream Notification" >> $GITHUB_STEP_SUMMARY
+          echo "Triggered rebuild of engleader.dev after README.md update." >> $GITHUB_STEP_SUMMARY
