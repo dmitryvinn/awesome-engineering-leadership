@@ -265,6 +265,7 @@ Awesome Engineering Leadership is a curated list of **1094** resources for anyon
 - [The Software Engineering Market Didn't Recover. It Split!](https://www.verticalmove.com/news-insights/software-engineering-market-didnt-recover-it-was-replaced) by *Verticalmove Team* — Analyzes the 2026 software engineering job market, explaining how AI productivity gains are reshaping hiring, compensation, and the types of engineering roles companies need.
 - [What I learned in my first year as an engineering director at Duolingo](https://blog.duolingo.com/engineering-leadership-first-year-duolingo/) by *Anand Mariappan* — Shares reflections on engineering leadership, including the value of pair programming in interviews, taking the long view during onboarding, and building empathy through reorgs.
 - [Who wants to be an engineering manager anyway?](https://leaddev.com/management/why-would-anyone-be-an-engineering-manager-in-2026) by *Chantal Kapani* — Examines the shifting landscape of engineering management in 2026, where smaller teams, AI tools, and expanded responsibilities are making the role more challenging and less appealing to engineers.
+- [The AI Time Bomb: Are You Prepared?](https://gabor.mayermayer.hu/2025/03/23/the-ai-time-bomb/) by *Gabor Mayer* — Argues AI won't eliminate developers but will reshape hiring, code review, and team structure, changing what engineering teams should screen for.
 
 ### People & Culture — Articles
 
